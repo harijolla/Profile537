@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="profiles.css" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            function hideTable(){
+                let pfEdtable=document.getElementById("pf-ed-table1");
+                pfEdtable.style.display="none";
+            }
+            function showTable(){
+                let pfEdtable=document.getElementById("pf-ed-table1");
+                pfEdtable.style.display="block";
+            }
+            function showObj(){
+                let pfEdtable=document.getElementById("pf-obj-description1");
+                pfEdtable.style.display="block";
+            }
+            function hideObj(){
+                let pfEdtable=document.getElementById("pf-obj-description1");
+                pfEdtable.style.display="none";
+            }
+            function hideSkills(){
+                let pfEdtable=document.getElementById("pf-skills-body1");
+                pfEdtable.style.display="none";
+            }
+            function showSkills(){
+                let pfEdtable=document.getElementById("pf-skills-body1");
+                pfEdtable.style.display="flex";
+            }
+        </script>
+        <div class="bg-container">
+            <h1 class="pf-title">Profile</h1>
+            <div class="pf-pd">
+                <h2 class="pf-pd-title">1.Personal Details</h2>
+                <hr class="pf-hr">
+                <div class="pf-pd-body">
+                    <img src="JHARI.jpg" class="pf-pd-image">
+                    <DIV class="pf-pd-body-details">
+                    <h3><span class="pf-pd-details-heading tab6">Name&nbsp&nbsp&nbsp&nbsp&nbsp:</span> <span class="pf-pd-details-text">JOLLA HARI NAGESWARA SATYA MANIKANTA</span></h3>
+                    <h3><span class="pf-pd-details-heading">Age&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :</span class="pf-pd-details-text"> 20</h3>
+                    <h3><span class="pf-pd-details-heading">Address&nbsp&nbsp&nbsp:</span><span class="pf-pd-details-text"> Mulasthanam</span></h3>
+                    <h3><span class="pf-pd-details-heading">Mobile&nbsp&nbsp&nbsp&nbsp:</span><span class="pf-pd-details-text"> +916304926879</span></h3>
+                    <h3><span class="pf-pd-details-heading">E-Mail&nbsp&nbsp&nbsp&nbsp :</span><span class="pf-pd-details-text"> jolllahari878@gmail.com</span></h3>
+                    </DIV>
+                </div>
+            </div>
+            <div class="pf-obj">
+                <h2 class="pf-pd-title">2.Career Objective</h2>
+                <hr>
+                <h4 class="pf-obj-descriptiion" id="pf-obj-description1">To be an Engineeer of Higher Standards, I want to improve my skills and
+                    knowledge which they can make use for the oraganisation I work in and myself</h4>
+                    <div class="pf-ed-buttons">
+                        <button class="btn-show" onclick="showObj()">Show</button><button class="btn-show" onclick="hideObj()">Hide</button>
+                    </div>
+            </div>
+            <div class="pf-ed">
+                <h2 class="pf-pd-title">3.Education Details</h2>
+                <hr>
+                <div id="pf-ed-table1">
+                <table class="pf-ed-table">
+                    <tr>
+                        <td class="pf-ed-table-heading" style="border-top-left-radius: 20px;">SI No.</td>
+                        <td class="pf-ed-table-heading">Course</td>
+                        <td class="pf-ed-table-heading">Name of the School</td>
+                        <td class="pf-ed-table-heading">Percentage</td>
+                        <td class="pf-ed-table-heading" style="border-top-right-radius: 20px;">Year of passing</td>
+                    </tr>
+                    <tr>
+                        <td class="pf-ed-table-text">1</td>
+                        <td class="pf-ed-table-text">SSC</td>
+                        <td class="pf-ed-table-text">SRI SHIRDI SAI VIDYA NIKETAN</td>
+                        <td class="pf-ed-table-text">98</td>
+                        <td class="pf-ed-table-text">2019</td>
+                    </tr>
+                    <tr>
+                        <td class="pf-ed-table-text">2</td>
+                        <td class="pf-ed-table-text">INTERMEDIATE</td>
+                        <td class="pf-ed-table-text">GOVERNMENT JUNIOR COLLEGE</td>
+                        <td class="pf-ed-table-text">67</td>
+                        <td class="pf-ed-table-text">2021</td>
+                    </tr>
+                    <tr>
+                        <td class="pf-ed-table-text" style="border-BOTTOM-LEFt-radius: 20px;">3</td>
+                        <td class="pf-ed-table-text">BTECH(CSE) UPTO 5 SEMESTERS</td>
+                        <td class="pf-ed-table-text">BVC COLLEGE OF ENGINEERING</td>
+                        <td class="pf-ed-table-text">76</td>
+                        <td class="pf-ed-table-text" style="border-bottom-right-radius: 20px;">2025</td>
+                    </tr>
+                </table>
+                </div>
+                <div class="pf-ed-buttons">
+                    <button class="btn-show" onclick="showTable()">Show</button><button class="btn-show" onclick="hideTable()">Hide</button>
+                </div>
+            </div>
+            <div class="pf-skills">
+                <h2 class="pf-skills-title">4.Skills</h2>
+                <hr>
+                <div class="pf-skills-body" id="pf-skills-body1" style="display:flex; justify-content: center;">
+                    <table>
+                        <tr>
+                            <td>
+                                <h3 class="pf-pd-details-heading">Emerging Technologies </h3>
+                            </td>
+                            <td>
+                                <h3 class="pf-pd-details-text"><span style="color:rgb(248, 160, 18)">: </span>Data Science</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 class="pf-pd-details-heading">Front End </h3>
+                            </td>
+                            <td>
+                                <h3 class="pf-pd-details-text"><span style="color:rgb(248, 160, 18)">: </span> HTML,CSS,Javascript</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 class="pf-pd-details-heading">Back End </h3>
+                            </td>
+                            <td>
+                                <h3 class="pf-pd-details-text"><span style="color:rgb(248, 160, 18)">: </span> React JS,Node Js</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 class="pf-pd-details-heading">DataBase </h3>
+                            </td>
+                            <td>
+                                <h3 class="pf-pd-details-text"><span style="color:rgb(248, 160, 18)">: </span> Microsoft SQl,SQL Lite</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 class="pf-pd-details-heading">Programming Languages </h3>
+                            </td>
+                            <td>
+                                <h3 class="pf-pd-details-text"><span style="color:rgb(248, 160, 18)">: </span> Java , Python</h3>
+                            </td>
+                        </tr>
+                    </table>    
+                </div>
+                <div class="pf-ed-buttons">
+                    <button class="btn-show" onclick="showSkills()">Show</button><button class="btn-show" onclick="hideSkills()">Hide</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
